@@ -1,74 +1,40 @@
 # vscode-settings
 
 ## Extensions
-| Name | Extension id |
-| -------------- | ------------ |
-| alphabetical-sorter | ue.alphabetical-sorter |
-| auto-rename-tag | formulahendry.auto-rename-tag |
-| bond.better-comments | aaron-bond.better-comments |
-| code-spell-checker | streetsidesoftware.code-spell-checker |
-| color-highlight | naumovs.color-highlight |
-| es7-react-js-snippets | rodrigovallades.es7-react-js-snippets |
-| es7-react-js-snippets | woodreamz.es7-react-js-snippets |
-| git-graph | mhutchie.git-graph |
-| gitlens | eamodio.gitlens |
-| innerhtml | nicolasparada.innerhtml |
-| kohler.path-intellisense | christian-kohler.path-intellisense |
-| markdown-all-in-one | yzhang.markdown-all-in-one |
-| material-icon-theme | PKief.material-icon-theme |
-| material-theme | zhuangtongfa.material-theme |
-| noctis | liviuschera.noctis |
-| partial-diff | ryu1kn.partial-diff |
-| prettier-vscode | esbenp.prettier-vscode |
-| regex | chrmarti.regex |
-| remote-vscode | rafaelmaiolla.remote-vscode |
-| s.vscode-scss-formatter | sibiraj-s.vscode-scss-formatter |
-| sync-scroll | dqisme.sync-scroll |
-| todo-tree | Gruntfuggly.todo-tree |
-| vscode-css-peek | pranaygp.vscode-css-peek |
-| vscode-eslint | dbaeumer.vscode-eslint |
-| vscode-filesize | mkxml.vscode-filesize |
-| vscode-import-cost | wix.vscode-import-cost |
-| vscode-mdx | unifiedjs.vscode-mdx |
-| vscode-notes | dionmunk.vscode-notes |
-| vscode-status-bar-format-toggle | tombonnike.vscode-status-bar-format-toggle |
-| vscode-stylelint | stylelint.vscode-stylelint |
-| vscode-yaml | redhat.vscode-yaml |
-| watters.vscode-color-pick | adam-watters.vscode-color-pick |
-
-### Installation commands
-code --install-extension aaron-bond.better-comments
-code --install-extension adam-watters.vscode-color-pick
-code --install-extension christian-kohler.path-intellisense
-code --install-extension chrmarti.regex
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dionmunk.vscode-notes
-code --install-extension dqisme.sync-scroll
-code --install-extension eamodio.gitlens
-code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension Gruntfuggly.todo-tree
-code --install-extension liviuschera.noctis
-code --install-extension mhutchie.git-graph
-code --install-extension mkxml.vscode-filesize
-code --install-extension naumovs.color-highlight
-code --install-extension nicolasparada.innerhtml
-code --install-extension PKief.material-icon-theme
-code --install-extension pranaygp.vscode-css-peek
-code --install-extension rafaelmaiolla.remote-vscode
-code --install-extension redhat.vscode-yaml
-code --install-extension rodrigovallades.es7-react-js-snippets
-code --install-extension ryu1kn.partial-diff
-code --install-extension sibiraj-s.vscode-scss-formatter
-code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension stylelint.vscode-stylelint
-code --install-extension tombonnike.vscode-status-bar-format-toggle
-code --install-extension ue.alphabetical-sorter
-code --install-extension unifiedjs.vscode-mdx
-code --install-extension wix.vscode-import-cost
-code --install-extension woodreamz.es7-react-js-snippets
-code --install-extension yzhang.markdown-all-in-one
-code --install-extension zhuangtongfa.material-theme
+| Name | Extension id | Installation command |
+| -------------- | ------------ | ---------------- |
+| alphabetical-sorter | ue.alphabetical-sorter | code --install-extension aaron-bond.better-comments |
+| auto-rename-tag | formulahendry.auto-rename-tag | code --install-extension adam-watters.vscode-color-pick |
+| bond.better-comments | aaron-bond.better-comments | code --install-extension christian-kohler.path-intellisense |
+| code-spell-checker | streetsidesoftware.code-spell-checker | code --install-extension chrmarti.regex |
+| color-highlight | naumovs.color-highlight | code --install-extension dbaeumer.vscode-eslint |
+| es7-react-js-snippets | rodrigovallades.es7-react-js-snippets | code --install-extension dionmunk.vscode-notes |
+| es7-react-js-snippets | woodreamz.es7-react-js-snippets | code --install-extension dqisme.sync-scroll |
+| git-graph | mhutchie.git-graph | code --install-extension eamodio.gitlens |
+| gitlens | eamodio.gitlens | code --install-extension esbenp.prettier-vscode |
+| innerhtml | nicolasparada.innerhtml | code --install-extension formulahendry.auto-rename-tag |
+| kohler.path-intellisense | christian-kohler.path-intellisense | code --install-extension Gruntfuggly.todo-tree |
+| markdown-all-in-one | yzhang.markdown-all-in-one | code --install-extension liviuschera.noctis |
+| material-icon-theme | PKief.material-icon-theme | code --install-extension mhutchie.git-graph |
+| material-theme | zhuangtongfa.material-theme | code --install-extension mkxml.vscode-filesize |
+| noctis | liviuschera.noctis | code --install-extension naumovs.color-highlight |
+| partial-diff | ryu1kn.partial-diff | code --install-extension nicolasparada.innerhtml |
+| prettier-vscode | esbenp.prettier-vscode | code --install-extension PKief.material-icon-theme |
+| regex | chrmarti.regex | code --install-extension pranaygp.vscode-css-peek |
+| remote-vscode | rafaelmaiolla.remote-vscode | code --install-extension rafaelmaiolla.remote-vscode |
+| s.vscode-scss-formatter | sibiraj-s.vscode-scss-formatter | code --install-extension redhat.vscode-yaml |
+| sync-scroll | dqisme.sync-scroll | code --install-extension rodrigovallades.es7-react-js-snippets |
+| todo-tree | Gruntfuggly.todo-tree | code --install-extension ryu1kn.partial-diff |
+| vscode-css-peek | pranaygp.vscode-css-peek | code --install-extension sibiraj-s.vscode-scss-formatter |
+| vscode-eslint | dbaeumer.vscode-eslint | code --install-extension streetsidesoftware.code-spell-checker |
+| vscode-filesize | mkxml.vscode-filesize | code --install-extension stylelint.vscode-stylelint |
+| vscode-import-cost | wix.vscode-import-cost | code --install-extension tombonnike.vscode-status-bar-format-toggle |
+| vscode-mdx | unifiedjs.vscode-mdx | code --install-extension ue.alphabetical-sorter |
+| vscode-notes | dionmunk.vscode-notes | code --install-extension unifiedjs.vscode-mdx |
+| vscode-status-bar-format-toggle | tombonnike.vscode-status-bar-format-toggle | code --install-extension wix.vscode-import-cost |
+| vscode-stylelint | stylelint.vscode-stylelint | code --install-extension woodreamz.es7-react-js-snippets |
+| vscode-yaml | redhat.vscode-yaml | code --install-extension yzhang.markdown-all-in-one |
+| watters.vscode-color-pick | adam-watters.vscode-color-pick | code --install-extension zhuangtongfa.material-theme |
 
 ## vscode settings.json
 ```json

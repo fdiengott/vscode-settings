@@ -35,7 +35,7 @@
 | vscode-stylelint | stylelint.vscode-stylelint | code --install-extension woodreamz.es7-react-js-snippets |
 | vscode-yaml | redhat.vscode-yaml | code --install-extension yzhang.markdown-all-in-one |
 | watters.vscode-color-pick | adam-watters.vscode-color-pick | code --install-extension zhuangtongfa.material-theme |
-
+****
 ## vscode settings.json
 ```json
 {
@@ -263,5 +263,101 @@
   ],
   "regex-previewer.enableCodeLens": false,
   "Notes.notesLocation": "/Users/fdiengot/code/notes"
+}
+```
+
+## .zshrc settings
+```bash
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export NODE_EXTRA_CA_CERTS="/Users/fdiengot/.certs/ZscalerRootCertificate-2048-SHA256.pem"
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/fdiengot/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="amuse"
+
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+
+HISTFILE="$HOME/.zsh_history"
+
+source $ZSH/oh-my-zsh.sh
+
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
+
+if [ -f ~/.bash_functions ]; then
+  . ~/.bash_functions
+fi
+
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ ($(nvm version) != $(nvm version default)) && ($PWD = /Users/$USERNAME) ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+fi }
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+export USERNAME="password"
+export PASSWORD="<username>"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+## .bash_aliases
+```bash
+# [ohmyzsh built in aliases](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh)
+
+# customized
+alias la='ls -A'
+alias ni='npm install'
+alias home='cd && code .'
+alias reload='source ~/.zshrc'
+
+# git
+alias gst='git status'
+alias glo='git log --oneline'
+alias gcm='git commit -m '
+alias co='git checkout'
+alias gcb='git checkout -b '
+alias con=gcb
+alias fetch='git fetch origin'
+alias push='git push origin head'
+alias pull='git pull'
+alias hreset='git reset --hard'
+alias revert='git reset --soft HEAD~1'
+
+# takes a branch name of `feature/####/<component>/<description>`
+# and gives prompts to execute: fix(CAMPFIRE-####): <MESSAGE>
+gcmc() {
+    TICKET=$(git branch --show-current | grep -Eo '\/[0-9]+\/' | grep -Eo '[0-9]+')
+    MESSAGE=$1
+    echo 'What type of commit is this (fix, feat, build, chore, ci, docs, style, refactor, perf, test)?'
+    read TYPE
+    echo 'Is it a breaking change (y/n)?'
+    read IS_BREAKING
+    if [[ $IS_BREAKING == "y" ]]
+    then
+        gcm "$TYPE(CAMPFIRE-$TICKET)!: $1"
+    else
+        gcm "$TYPE(CAMPFIRE-$TICKET): $1"
+    fi
+}
+
+findFile() {
+    find . -type d -name node_modules -prune -o -name .git -prune -o -iname $1 -print
 }
 ```

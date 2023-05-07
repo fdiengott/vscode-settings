@@ -1,38 +1,40 @@
 # vscode-settings
 
 ## Extensions
-- alphabetical-sorter:                 ue.alphabetical-sorter
-- auto-rename-tag:                     formulahendry.auto-rename-tag
-- bond.better-comments:                aaron-bond.better-comments
-- code-spell-checker:                  streetsidesoftware.code-spell-checker
-- color-highlight:                     naumovs.color-highlight
-- es7-react-js-snippets:               rodrigovallades.es7-react-js-snippets
-- es7-react-js-snippets:               woodreamz.es7-react-js-snippets
-- git-graph:                           mhutchie.git-graph
-- gitlens:                             eamodio.gitlens
-- innerhtml:                           nicolasparada.innerhtml
-- kohler.path-intellisense:            christian-kohler.path-intellisense
-- markdown-all-in-one:                 yzhang.markdown-all-in-one
-- material-icon-theme:                 PKief.material-icon-theme
-- material-theme:                      zhuangtongfa.material-theme
-- noctis:                              liviuschera.noctis
-- partial-diff:                        ryu1kn.partial-diff
-- prettier-vscode:                     esbenp.prettier-vscode
-- regex:                               chrmarti.regex
-- remote-vscode:                       rafaelmaiolla.remote-vscode
-- s.vscode-scss-formatter:             sibiraj-s.vscode-scss-formatter
-- sync-scroll:                         dqisme.sync-scroll
-- todo-tree:                           Gruntfuggly.todo-tree
-- vscode-css-peek:                     pranaygp.vscode-css-peek
-- vscode-eslint:                       dbaeumer.vscode-eslint
-- vscode-filesize:                     mkxml.vscode-filesize
-- vscode-import-cost:                  wix.vscode-import-cost
-- vscode-mdx:                          unifiedjs.vscode-mdx
-- vscode-notes:                        dionmunk.vscode-notes
-- vscode-status-bar-format-toggle:     tombonnike.vscode-status-bar-format-toggle
-- vscode-stylelint:                    stylelint.vscode-stylelint
-- vscode-yaml:                         redhat.vscode-yaml
-- watters.vscode-color-pick:           adam-watters.vscode-color-pick
+| Name | Extension id |
+| -------------- | ------------ |
+| alphabetical-sorter | ue.alphabetical-sorter |
+| auto-rename-tag | formulahendry.auto-rename-tag |
+| bond.better-comments | aaron-bond.better-comments |
+| code-spell-checker | streetsidesoftware.code-spell-checker |
+| color-highlight | naumovs.color-highlight |
+| es7-react-js-snippets | rodrigovallades.es7-react-js-snippets |
+| es7-react-js-snippets | woodreamz.es7-react-js-snippets |
+| git-graph | mhutchie.git-graph |
+| gitlens | eamodio.gitlens |
+| innerhtml | nicolasparada.innerhtml |
+| kohler.path-intellisense | christian-kohler.path-intellisense |
+| markdown-all-in-one | yzhang.markdown-all-in-one |
+| material-icon-theme | PKief.material-icon-theme |
+| material-theme | zhuangtongfa.material-theme |
+| noctis | liviuschera.noctis |
+| partial-diff | ryu1kn.partial-diff |
+| prettier-vscode | esbenp.prettier-vscode |
+| regex | chrmarti.regex |
+| remote-vscode | rafaelmaiolla.remote-vscode |
+| s.vscode-scss-formatter | sibiraj-s.vscode-scss-formatter |
+| sync-scroll | dqisme.sync-scroll |
+| todo-tree | Gruntfuggly.todo-tree |
+| vscode-css-peek | pranaygp.vscode-css-peek |
+| vscode-eslint | dbaeumer.vscode-eslint |
+| vscode-filesize | mkxml.vscode-filesize |
+| vscode-import-cost | wix.vscode-import-cost |
+| vscode-mdx | unifiedjs.vscode-mdx |
+| vscode-notes | dionmunk.vscode-notes |
+| vscode-status-bar-format-toggle | tombonnike.vscode-status-bar-format-toggle |
+| vscode-stylelint | stylelint.vscode-stylelint |
+| vscode-yaml | redhat.vscode-yaml |
+| watters.vscode-color-pick | adam-watters.vscode-color-pick |
 
 ### Installation commands
 code --install-extension aaron-bond.better-comments

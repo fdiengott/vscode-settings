@@ -3,46 +3,51 @@
 ## Extensions
 | Name | Extension id | Installation command |
 | -------------- | ------------ | ---------------- |
-| alphabetical-sorter | ue.alphabetical-sorter | code --install-extension aaron-bond.better-comments |
-| auto-rename-tag | formulahendry.auto-rename-tag | code --install-extension adam-watters.vscode-color-pick |
-| bond.better-comments | aaron-bond.better-comments | code --install-extension christian-kohler.path-intellisense |
-| code-spell-checker | streetsidesoftware.code-spell-checker | code --install-extension chrmarti.regex |
-| color-highlight | naumovs.color-highlight | code --install-extension dbaeumer.vscode-eslint |
-| es7-react-js-snippets | rodrigovallades.es7-react-js-snippets | code --install-extension dionmunk.vscode-notes |
-| es7-react-js-snippets | woodreamz.es7-react-js-snippets | code --install-extension dqisme.sync-scroll |
-| git-graph | mhutchie.git-graph | code --install-extension eamodio.gitlens |
-| gitlens | eamodio.gitlens | code --install-extension esbenp.prettier-vscode |
-| innerhtml | nicolasparada.innerhtml | code --install-extension formulahendry.auto-rename-tag |
-| kohler.path-intellisense | christian-kohler.path-intellisense | code --install-extension Gruntfuggly.todo-tree |
-| markdown-all-in-one | yzhang.markdown-all-in-one | code --install-extension liviuschera.noctis |
-| material-icon-theme | PKief.material-icon-theme | code --install-extension mhutchie.git-graph |
-| material-theme | zhuangtongfa.material-theme | code --install-extension mkxml.vscode-filesize |
-| noctis | liviuschera.noctis | code --install-extension naumovs.color-highlight |
-| partial-diff | ryu1kn.partial-diff | code --install-extension nicolasparada.innerhtml |
-| prettier-vscode | esbenp.prettier-vscode | code --install-extension PKief.material-icon-theme |
-| regex | chrmarti.regex | code --install-extension pranaygp.vscode-css-peek |
+| alphabetical-sorter | ue.alphabetical-sorter | code --install-extension ue.alphabetical-sorter |
+| auto-rename-tag | formulahendry.auto-rename-tag | code --install-extension formulahendry.auto-rename-tag |
+| bond.better-comments | aaron-bond.better-comments | code --install-extension aaron-bond.better-comments |
+| code-spell-checker | streetsidesoftware.code-spell-checker | code --install-extension streetsidesoftware.code-spell-checker |
+| color-highlight | naumovs.color-highlight | code --install-extension naumovs.color-highlight |
+| es7-react-js-snippets | rodrigovallades.es7-react-js-snippets | code --install-extension rodrigovallades.es7-react-js-snippets |
+| es7-react-js-snippets | woodreamz.es7-react-js-snippets | code --install-extension woodreamz.es7-react-js-snippets |
+| git-graph | mhutchie.git-graph | code --install-extension mhutchie.git-graph |
+| gitlens | eamodio.gitlens | code --install-extension eamodio.gitlens |
+| increment-selection | albymor.increment-selection | code --install-extension albymor.increment-selection |
+| innerhtml | nicolasparada.innerhtml | code --install-extension nicolasparada.innerhtml |
+| kohler.path-intellisense | christian-kohler.path-intellisense | code --install-extension christian-kohler.path-intellisense |
+| markdown-all-in-one | yzhang.markdown-all-in-one | code --install-extension yzhang.markdown-all-in-one |
+| material-icon-theme | PKief.material-icon-theme | code --install-extension PKief.material-icon-theme |
+| material-theme | zhuangtongfa.material-theme | code --install-extension zhuangtongfa.material-theme |
+| noctis | liviuschera.noctis | code --install-extension liviuschera.noctis |
+| partial-diff | ryu1kn.partial-diff | code --install-extension ryu1kn.partial-diff |
+| prettier-vscode | esbenp.prettier-vscode | code --install-extension esbenp.prettier-vscode |
+| regex | chrmarti.regex | code --install-extension chrmarti.regex |
 | remote-vscode | rafaelmaiolla.remote-vscode | code --install-extension rafaelmaiolla.remote-vscode |
-| s.vscode-scss-formatter | sibiraj-s.vscode-scss-formatter | code --install-extension redhat.vscode-yaml |
-| sync-scroll | dqisme.sync-scroll | code --install-extension rodrigovallades.es7-react-js-snippets |
-| todo-tree | Gruntfuggly.todo-tree | code --install-extension ryu1kn.partial-diff |
-| vscode-css-peek | pranaygp.vscode-css-peek | code --install-extension sibiraj-s.vscode-scss-formatter |
-| vscode-eslint | dbaeumer.vscode-eslint | code --install-extension streetsidesoftware.code-spell-checker |
-| vscode-filesize | mkxml.vscode-filesize | code --install-extension stylelint.vscode-stylelint |
-| vscode-import-cost | wix.vscode-import-cost | code --install-extension tombonnike.vscode-status-bar-format-toggle |
-| vscode-mdx | unifiedjs.vscode-mdx | code --install-extension ue.alphabetical-sorter |
-| vscode-notes | dionmunk.vscode-notes | code --install-extension unifiedjs.vscode-mdx |
-| vscode-status-bar-format-toggle | tombonnike.vscode-status-bar-format-toggle | code --install-extension wix.vscode-import-cost |
-| vscode-stylelint | stylelint.vscode-stylelint | code --install-extension woodreamz.es7-react-js-snippets |
-| vscode-yaml | redhat.vscode-yaml | code --install-extension yzhang.markdown-all-in-one |
-| watters.vscode-color-pick | adam-watters.vscode-color-pick | code --install-extension zhuangtongfa.material-theme |
-****
+| s.vscode-scss-formatter | sibiraj-s.vscode-scss-formatter | code --install-extension sibiraj-s.vscode-scss-formatter |
+| selected-lines-count | gurumukhi.selected-lines-count | code --install-extension gurumukhi.selected-lines-count |
+| sync-scroll | dqisme.sync-scroll | code --install-extension dqisme.sync-scroll |
+| tabnine-vscode | TabNine.tabnine-vscode | code --install-extension TabNine.tabnine-vscode |
+| todo-tree | Gruntfuggly.todo-tree | code --install-extension Gruntfuggly.todo-tree |
+| vscode-color-pick | adam-watters.vscode-color-pick | code --install-extension adam-watters.vscode-color-pick |
+| vscode-css-peek | pranaygp.vscode-css-peek | code --install-extension pranaygp.vscode-css-peek |
+| vscode-eslint | dbaeumer.vscode-eslint | code --install-extension dbaeumer.vscode-eslint |
+| vscode-filesize | mkxml.vscode-filesize | code --install-extension mkxml.vscode-filesize |
+| vscode-import-cost | wix.vscode-import-cost | code --install-extension wix.vscode-import-cost |
+| vscode-mdx | unifiedjs.vscode-mdx | code --install-extension unifiedjs.vscode-mdx |
+| vscode-notes | dionmunk.vscode-notes | code --install-extension dionmunk.vscode-notes |
+| vscode-status-bar-format-toggle | tombonnike.vscode-status-bar-format-toggle | code --install-extension tombonnike.vscode-status-bar-format-toggle |
+| vscode-stylelint | stylelint.vscode-stylelint | code --install-extension stylelint.vscode-stylelint |
+| vscode-yaml | redhat.vscode-yaml | code --install-extension redhat.vscode-yaml |
+
 ## vscode settings.json
 ```json
 {
+  // minimap
   "editor.minimap.maxColumn": 80,
+  "editor.minimap.side": "left",
+  "editor.minimap.size": "fill",
   "editor.minimap.showSlider": "always",
   "editor.minimap.renderCharacters": false,
-  "editor.minimap.size": "fit",
   "editor.rulers": [120],
   "editor.showFoldingControls": "always",
   "workbench.editor.tabSizing": "shrink",
@@ -55,13 +60,15 @@
     "activityBar.background": "#1c2432",
     "activityBar.activeBackground": "#313d52",
     "activityBar.border": "#313d52",
-    "sideBar.background": "#181b23",
     "sideBar.border": "#313d52",
+    "sideBar.background": "#181b23",
+    "minimapSlider.background": "#ffffff1a",
+    "minimapSlider.hoverBackground": "#ffffff2a",
     "terminal.background": "#171e29",
     "terminal.foreground": "#b5bcc6",
     "terminal.tab.activeBorder": "#ff0000"
   },
-  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "window.title": "${activeEditorMedium} | ${rootPath}",
   "launch": {
     "configurations": [],
     "compounds": []
@@ -83,27 +90,26 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.formatOnSave": false
   },
   "[mdx]": {
     "editor.formatOnSave": false
   },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "html.format.unformatted": "",
-  "json.schemas": [],
-  "todo-tree.highlights.defaultHighlight": {
-    "foreground": "#fff",
-    "background": "#cb00e6"
-  },
-  "terminal.integrated.scrollback": 3000,
-  "[html]": {
+    "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "html.format.unformatted": "",
+  "json.schemas": [],
+  "terminal.integrated.scrollback": 3000,
   "eslint.codeActionsOnSave.mode": "problems",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
@@ -180,6 +186,17 @@
     ]
   },
   // used to improve comments: TODOs and labeled./styled comments
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "#fff",
+    "background": "#cb00e6"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "LINK": {
+      "icon": "link",
+      "background": "#334bff",
+      "foreground": "#fff"
+    }
+  },
   // "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
   "todo-tree.regex.regex": "(//|\\*|<!--)\\s+($TAGS)\\s+",
   "todo-tree.general.tags": [
@@ -262,7 +279,11 @@
     "**/dist/**"
   ],
   "regex-previewer.enableCodeLens": false,
-  "Notes.notesLocation": "/Users/fdiengot/code/notes"
+  "Notes.notesLocation": "/Users/fdiengot/code/notes",
+  "scss.lint.duplicateProperties": "warning",
+  "tabnine.experimentalAutoImports": true,
+  "tabnine.debounceMilliseconds": 400,
+  "audioCues.volume": 0
 }
 ```
 
@@ -347,13 +368,15 @@ gcmc() {
     MESSAGE=$1
     echo 'What type of commit is this (fix, feat, build, chore, ci, docs, style, refactor, perf, test)?'
     read TYPE
-    echo 'Is it a breaking change (y/n)?'
+    echo 'Is it a breaking change (y/N)?'
     read IS_BREAKING
-    if [[ $IS_BREAKING == "y" ]]
+    if [[ $IS_BREAKING =~ ([yY]) ]]
     then
-        gcm "$TYPE(CAMPFIRE-$TICKET)!: $1"
+        gcm "$TYPE(CAMPFIRE-$TICKET): $1
+
+BREAKING CHANGE: " $2
     else
-        gcm "$TYPE(CAMPFIRE-$TICKET): $1"
+        gcm "$TYPE(CAMPFIRE-$TICKET): $1" $2
     fi
 }
 
@@ -361,3 +384,12 @@ findFile() {
     find . -type d -name node_modules -prune -o -name .git -prune -o -iname $1 -print
 }
 ```
+
+## Misc
+### Applications
+- Fork
+  - A git gui used for more complex git interactions
+- Script kit
+  - Adds ability to run ts scripts from anywhere
+- LICEcap
+  - Record gifs

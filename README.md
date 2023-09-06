@@ -454,3 +454,6 @@ findFile() {
   - [BEM CSS naming](getbem.com/introduction/)
   - [Codepen](codepen.io/your-work)
   - [DOM to SVG Coordinates getScreenCTM](sitepoint.com/how-to-translate-from-dom-to-svg-coordinates-and-back-again/)
+- Setup
+  - [ohmyzsh](https://ohmyz.sh/)
+  - [OhMyZsh plugins](https://dev.to/kumareth/a-beginner-s-guide-for-setting-up-autocomplete-on-ohmyzsh-hyper-with-plugins-themes-47f2)

@@ -53,21 +53,30 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.list.horizontalScrolling": true,
   // desktop custom colorizing
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Cypher",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
-    "editor.background": "#1c2432",
-    "activityBar.background": "#1c2432",
-    "activityBar.activeBackground": "#313d52",
-    "activityBar.border": "#313d52",
-    "sideBar.border": "#313d52",
-    "sideBar.background": "#181b23",
-    "minimapSlider.background": "#ffffff1a",
-    "minimapSlider.hoverBackground": "#ffffff2a",
+    "list.inactiveSelectionBackground": "#6dffb137",
+    "editor.findMatchBackground": "#924e4e68",
+    "editor.findMatchHighlightBackground": "#924e4e69",
+    "editor.lineHighlightBackground": "#343030",
+    "editor.selectionBackground": "#fcfdb030",
+    "editor.selectionHighlightBorder": "#fff2002f",
+    "list.highlightForeground": "#f9b4ed",
+    "editor.hoverHighlightBackground": "#fff3",
+    "tab.hoverForeground": "#fff",
     "terminal.background": "#171e29",
     "terminal.foreground": "#b5bcc6",
-    "terminal.tab.activeBorder": "#ff0000"
+    "terminal.tab.activeBorder": "#ff0000",
+    "minimapSlider.background": "#ffffff2f",
+    "minimapSlider.hoverBackground": "#ffffff3f",
+    "minimapGutter.addedBackground": "#00fa26",
+    "minimapGutter.deletedBackground": "#ff0000",
+    "minimapGutter.modifiedBackground": "#0073ff",
+    "minimap.selectionHighlight": "#ffffe9ab",
+    "minimap.warningHighlight": "#ffff0067"
   },
+  "material-icon-theme.files.color": "#26a69a",
   "window.title": "${activeEditorMedium} | ${rootPath}",
   "launch": {
     "configurations": [],
@@ -90,20 +99,33 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[mdx]": {
     "editor.formatOnSave": false
   },
-    "[html]": {
+  "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -151,9 +173,73 @@
     "javascript": "javascriptreact"
   },
   "editor.formatOnSave": true,
-  // Used to color regex
   "editor.tokenColorCustomizations": {
     "textMateRules": [
+      // custom colors
+      {
+        "scope": ["text.html.markdown"],
+        "settings": {
+          "foreground": "#7a9e8b"
+        }
+      },
+      {
+        "scope": ["variable", "markup.inline.raw", "support.class"],
+        "settings": {
+          "foreground": "#c7768e"
+        }
+      },
+      {
+        "scope": [
+          // "support.class",
+          "entity.name.function"
+        ],
+        "settings": {
+          "foreground": "#65aad1"
+        }
+      },
+      {
+        "scope": ["source.css support.type.property-name"],
+        "settings": {
+          "foreground": "#8ec0dc"
+        }
+      },
+      {
+        "scope": [
+          "keyword.control",
+          "storage.type",
+          "meta.block variable.other.property",
+          "variable.other.property",
+          "meta.object-literal.key"
+        ],
+        "settings": {
+          "foreground": "#d6c491"
+        }
+      },
+      {
+        "scope": ["comment", "punctuation.definition.comment"],
+        "settings": {
+          "foreground": "#B1B2B3",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.tag",
+          "meta.tag.sgml",
+          "markup.deleted.git_gutter",
+          "meta.block variable.other",
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
+          "markdown.heading",
+          "markup.heading | markup.heading entity.name",
+          "markup.heading.markdown punctuation.definition.heading.markdown",
+          "variable.parameter"
+        ],
+        "settings": {
+          "foreground": "#de940c"
+        }
+      },
+
+      // Regex
       {
         "scope": ["keyword.operator.or.regexp"],
         "settings": {
@@ -204,6 +290,7 @@
     "HACK",
     "FIXME",
     "TODO",
+    "Test",
     "?",
     "*",
     ">",

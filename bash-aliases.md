@@ -31,9 +31,11 @@ gcmm() {
     TICKET=$(git branch --show-current | grep -Eo '\/[0-9]+\/' | grep -Eo '[0-9]+')
     HEAD=$1
     BODY=$2
+    ALL_ARGS=("$@");
+    REST=("${ALL_ARGS[@]:2}") # get all args after first 2
     echo 'What type of commit is this (fix, feat, build, chore, ci, docs, style, refactor, perf, test)?'
     read TYPE
-    gcm "$TYPE(CAMPFIRE-$TICKET): $1" -m "$2"
+    gcm "$TYPE(CAMPFIRE-$TICKET): $HEAD" -m $BODY $REST
 }
 
 findFile() {

@@ -27,8 +27,10 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "list.inactiveSelectionBackground": "#6dffb137",
-    "editor.findMatchBackground": "#924e4e68",
-    "editor.findMatchHighlightBackground": "#924e4e69",
+    "editor.findMatchBackground": "#bb727242",
+    "editor.findMatchBorder": "#fff5",
+    "editor.findMatchHighlightBackground": "#924e4e60",
+    "editor.findMatchHighlightBorder": "#ffffff22",
     "editor.lineHighlightBackground": "#343030",
     "editor.selectionBackground": "#fcfdb030",
     "editor.selectionHighlightBorder": "#fff2002f",

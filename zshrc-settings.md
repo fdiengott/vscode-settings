@@ -15,6 +15,8 @@ export ZSH="/Users/fdiengot/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="minimalism"
 
+# ^^ IF YOU WANT TO ADD A CUSTOM THEME, CHANGE THE ABOVE TO WHATEVER YOUR THEME IS CALLED
+
 plugins=(
   git
   zsh-syntax-highlighting

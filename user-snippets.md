@@ -1,5 +1,5 @@
 # VsCode user snippets
-```
+```json
 // javascript.json
 {
 	"Console table": {

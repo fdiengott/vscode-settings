@@ -4,9 +4,10 @@
 | --------------                  | ------------                               | ---------------- |                                                  | --------------- |
 | alphabetical-sorter             | ue.alphabetical-sorter                     | code --install-extension ue.alphabetical-sorter                     | quality of life |
 | astro-vscode                    | astro-build.astro-vscode                   | code --install-extension astro-build.astro-vscode                   | lang |
+| auto-close-tag                  | formulahendry.auto-close-tag               | code --install-extension formulahendry.auto-close-tag               | quality of life |
 | auto-rename-tag                 | formulahendry.auto-rename-tag              | code --install-extension formulahendry.auto-rename-tag              | quality of life |
 | batch-rename-extension          | JannisX11.batch-rename-extension           | code --install-extension JannisX11.batch-rename-extension           | Tool |
-| bond.better-comments            | aaron-bond.better-comments                 | code --install-extension aaron-bond.better-comments                 | Upgrade |
+| better-comments                 | aaron-bond.better-comments                 | code --install-extension aaron-bond.better-comments                 | Upgrade |
 | code-spell-checker              | streetsidesoftware.code-spell-checker      | code --install-extension streetsidesoftware.code-spell-checker      | Tool |
 | color-highlight                 | naumovs.color-highlight                    | code --install-extension naumovs.color-highlight                    | Upgrade |
 | color-manager                   | royaction.color-manager                    | code --install-extension royaction.color-manager                    | Tool |
@@ -17,7 +18,7 @@
 | gitlens                         | eamodio.gitlens                            | code --install-extension eamodio.gitlens                            | tool |
 | increment-selection             | albymor.increment-selection                | code --install-extension albymor.increment-selection                | tool |
 | innerhtml                       | nicolasparada.innerhtml                    | code --install-extension nicolasparada.innerhtml                    | formatting |
-| kohler.path-intellisense        | christian-kohler.path-intellisense         | code --install-extension christian-kohler.path-intellisense         | quality of life |
+| path-intellisense               | christian-kohler.path-intellisense         | code --install-extension christian-kohler.path-intellisense         | quality of life |
 | markdown-all-in-one             | yzhang.markdown-all-in-one                 | code --install-extension yzhang.markdown-all-in-one                 | tool |
 | material-icon-theme             | PKief.material-icon-theme                  | code --install-extension PKief.material-icon-theme                  | theming |
 | material-theme                  | zhuangtongfa.material-theme                | code --install-extension zhuangtongfa.material-theme                | theming |
@@ -25,8 +26,9 @@
 | noctis                          | liviuschera.noctis                         | code --install-extension liviuschera.noctis                         | theming |
 | partial-diff                    | ryu1kn.partial-diff                        | code --install-extension ryu1kn.partial-diff                        | tool |
 | prettier-vscode                 | esbenp.prettier-vscode                     | code --install-extension esbenp.prettier-vscode                     | formatting |
+| randomeverything                | helixquar.randomeverything                 | code --install-extension helixquar.randomeverything                 | tool |
 | regex                           | chrmarti.regex                             | code --install-extension chrmarti.regex                             | tool |
-| s.vscode-scss-formatter         | sibiraj-s.vscode-scss-formatter            | code --install-extension sibiraj-s.vscode-scss-formatter            | formatting |
+| vscode-scss-formatter           | sibiraj-s.vscode-scss-formatter            | code --install-extension sibiraj-s.vscode-scss-formatter            | formatting |
 | selected-lines-count            | gurumukhi.selected-lines-count             | code --install-extension gurumukhi.selected-lines-count             | quality of life |
 | sync-scroll                     | dqisme.sync-scroll                         | code --install-extension dqisme.sync-scroll                         | quality of life |
 | tabnine-vscode                  | TabNine.tabnine-vscode                     | code --install-extension TabNine.tabnine-vscode                     | quality of life |

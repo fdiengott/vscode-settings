@@ -6,9 +6,12 @@
   - [custom-theme.md](./custom-theme.md)
 - [bash-aliases.md](./bash-aliases.md)
 - [user-snippets.md](./user-snippets.md)
+- [command line tools](./command-line-tools.md)
 
 ## Misc
+
 ### Applications
+
 - Fork
   - A git gui used for more complex git interactions
 - Script kit
@@ -17,10 +20,12 @@
   - Record gifs
 
 ### Web extensions (Firefox)
+
 - ColorPick Eyedropper
 - Tab Stash
 
 ### Websites
+
 - Guides
   - [CSS Tricks Flexbox](css-tricks.com/snippets/css/a-guide-to-flexbox/)
   - [Sass: Documentation](sass-lang.com/documentation)

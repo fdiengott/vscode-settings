@@ -6,10 +6,12 @@ Create the file `.zsh_aliases` in your home directory.
 
 # customized
 alias la='ls -A'
+alias ls='ls -F1G'
 alias ni='npm install'
 alias home='code ~'
 alias reload='source ~/.zshrc'
 alias op='code .'
+alias cof='co $(gb | fzf)'
 
 # git
 alias gst='git status'

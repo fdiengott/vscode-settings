@@ -51,4 +51,12 @@ export PASSWORD="<username>"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# If not using oh-my-zsh add the following
+setopt PROMPT_SUBST # Allow using variables in prompt
+
+# ignore case when tab completing
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' menu select
 ```

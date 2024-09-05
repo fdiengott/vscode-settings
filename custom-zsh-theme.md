@@ -2,6 +2,8 @@
 
 [~/.oh-my-zsh/custom/themes/minimalism.zsh-theme]
 
+!! Note: If used without oh-my-zsh, add `setopt PROMPT_SUBST` to your .zshrc
+
 ```bash
 # In zsh, % and ) are special characters. The fg signifies the foreground color. The %3~ shows the path of the current working directory at three levels depth. If you prefer the full path relative to the home directory to be shown you can update it to %0~. The (git_prompt_info) points towards the currently checked out git branch for the repository
 
@@ -65,7 +67,7 @@ branch_description() {
 # RPROMPT='%F{white}[%c]%f%K{yellow}  %F{black}$(current_ticket_alternate)%k%f  %F{magenta}$(branch_description_alternate)%f'
 
 # current_ticket_alternate() {
-#     ticket_num=$(git branch --show-current | grep -Eo '[0-9]{4}')
+#     ticket_num=$(git branch --show-current 2> /dev/null | grep -Eo '[0-9]{4}')
 #
 #     if [ -n "${ticket_num}" ]; then # if not empty
 #         echo "${ticket_num}"
@@ -73,7 +75,7 @@ branch_description() {
 # }
 
 # branch_description_alternate() {
-#     branch="$(git branch --show-current)"
+#     branch="$(git branch --show-current 2> /dev/null)"
 #
 #     if [ -n "$(echo $branch | grep -Eo '[0-9]{4}')" ]; then
 #         echo "$branch" | sed 's/[A-Z]*-[0-9]*-//'

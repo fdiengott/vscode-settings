@@ -12,7 +12,9 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "git.ignoreLegacyWarning": true,
   "git.ignoreMissingGitWarning": true,
   "js/ts.implicitProjectConfig.checkJs": false,
+
   // minimap
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.side": "left",
   "editor.minimap.size": "fill",
@@ -22,11 +24,14 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "editor.showFoldingControls": "always",
   "workbench.editor.tabSizing": "shrink",
   "workbench.list.horizontalScrolling": true,
+
   // desktop custom colorizing
   "workbench.colorTheme": "Cypher",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "list.inactiveSelectionBackground": "#6dffb137",
+    "editor.background": "#000000",
+    "editorCursor.foreground": "#c4c6c2",
     "editor.findMatchBackground": "#bb727242",
     "editor.findMatchBorder": "#fff5",
     "editor.findMatchHighlightBackground": "#924e4e60",
@@ -35,6 +40,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
     "editor.selectionBackground": "#fcfdb030",
     "editor.selectionHighlightBorder": "#fff2002f",
     "list.highlightForeground": "#f9b4ed",
+    "list.inactiveSelectionBackground": "#6dffb137",
     "editor.hoverHighlightBackground": "#fff3",
     "tab.hoverForeground": "#fff",
     "panel.border": "#757a80",
@@ -48,7 +54,12 @@ Make sure to download the "Cypher" extension for the color theming to look corre
     "minimapGutter.deletedBackground": "#ff0000",
     "minimapGutter.modifiedBackground": "#0073ff",
     "minimap.selectionHighlight": "#ffffe9ab",
-    "minimap.warningHighlight": "#ffff0067"
+    "minimap.warningHighlight": "#ffff0067",
+    "statusBar.background": "#8fbcbb",
+    "statusBar.noFolderBackground": "#8fbcbb",
+    "statusBar.debuggingBackground": "#8fbcbb",
+    "statusBar.foreground": "#000",
+    "statusBar.debuggingForeground": "#000"
   },
   "window.title": "${activeEditorMedium} | ${rootPath}",
   "launch": {
@@ -58,6 +69,8 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "terminal.integrated.cursorStyle": "line",
   "editor.wordWrap": "on",
   "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "explorer.compactFolders": false,
   "yaml.schemas": {
     "file:///Users/fdiengot/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
@@ -99,8 +112,6 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
   "html.format.unformatted": "",
   "json.schemas": [],
   "terminal.integrated.scrollback": 3000,
@@ -278,10 +289,8 @@ Make sure to download the "Cypher" extension for the color theming to look corre
     "FIXME",
     "TODO",
     "TEST",
-    "?",
-    "*",
-    ">",
-    "!"
+    "INFO",
+    "ASK"
   ],
   "todo-tree.filtering.excludedWorkspaces": ["docs_site/*, node_modules/*"],
   "better-comments.tags": [
@@ -358,5 +367,258 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "editor.accessibilitySupport": "off",
   "material-icon-theme.files.color": "#26a69a",
   "editor.formatOnSave": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "editor.lineNumbers": "relative",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorBlinking": "solid",
+  "editor.colorDecorators": true,
+  "workbench.editor.showTabs": "single",
+  "workbench.statusBar.visible": "single",
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 120,
+  "prettier.tabWidth": 4,
+  "prettier.trailingComma": "all",
+  "prettier.useTabs": true,
+
+  // vim
+  "vim.foldfix": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "Z", "Z"]
+    },
+    {
+      "before": ["c-d"],
+      "after": ["c-d", "z", "z"]
+    },
+    {
+      "before": ["c-u"],
+      "after": ["c-u", "z", "z"]
+    },
+    {
+      "before": ["s"],
+      "commands": ["leap.find"]
+    },
+    {
+      "before": ["y", "o", "r"],
+      "commands": [":set rnu!"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["("],
+      "after": ["^"]
+    },
+    {
+      "before": [")"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "s", "w"],
+      "after": ["v", "i", "w"],
+      "commands": ["editor.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "s", "r"],
+      "commands": [
+        "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+      ]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["workbench.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["workbench.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "k"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<leader>", "h", "r"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "h", "s"],
+      "commands": ["git.stage"]
+    },
+    {
+      "before": ["<leader>", "k", "w"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    },
+    {
+      "before": ["<leader>", "w", "+"],
+      "commands": ["workbench.action.minimizeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "w", "="],
+      "commands": ["workbench.action.evenEditorWidths"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["editor.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["editor.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "t"],
+      "commands": ["todo-tree.goToNext"]
+    },
+    {
+      "before": ["[", "t"],
+      "commands": ["todo-tree.goToPrevious"]
+    },
+    {
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "e"],
+      "commands": ["editor.action.marker.previous"]
+    },
+    {
+      "before": ["]", "x"],
+      "commands": ["merge-conflict.next"]
+    },
+    {
+      "before": ["[", "x"],
+      "commands": ["merge-conflict.previous"]
+    },
+    {
+      "before": ["]", "v"],
+      "commands": ["workbench.aciton.compareEditor.nextChange"]
+    },
+    {
+      "before": ["[", "v"],
+      "commands": ["workbench.aciton.compareEditor.previousChange"]
+    },
+    {
+      "before": ["<leader>", "b", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "after": ["O", "/", "/", " ", "T", "O", "D", "O", "<ESC>"]
+    },
+    {
+      "before": ["<leader>", "w", "k"],
+      "commands": ["workbench.action.increaseViewSize"]
+    },
+    {
+      "before": ["<leader>", "w", "j"],
+      "commands": ["workbench.action.decreaseViewSize"]
+    },
+    {
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "t", "d"],
+      "commands": ["workbench.view.extension.todo-tree-container"]
+    },
+    {
+      "before": ["-"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.emmet.action.matchTag"]
+    },
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["merge-conflict.accept.current"]
+    },
+    {
+      "before": ["<leader>", "c", "i"],
+      "commands": ["merge-conflict.accept.incoming"]
+    },
+    {
+      "before": ["<leader>", "c", "b"],
+      "commands": ["merge-conflict.accept.both"]
+    },
+    {
+      "before": ["<leader>", "v", "s"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "s", "p"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "r", "l"],
+      "commands": [":set relativenumber!"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<ESC>"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["p"],
+      "after": ["\"", "_", "d", "P"]
+    }
+  ],
+  "vim.highlightedyank.enabled": true,
+  "vim.incsearch": true,
+  "vcim.handleKeys": {
+    "<C-d>": true,
+    "<C-j>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#8fbcbb", "#000"],
+  "vim.statusBarColors.insert": ["#bf616a", "#000"],
+  "vim.statusBarColors.visual": ["#d48ecd", "#000"],
+  "vim.statusBarColors.visualline": ["#d48ecd", "#000"],
+  "vim.statusBarColors.visualblock": ["#a3de8c", "#000"],
+  "vim.statusBarColors.replace": "#ea4545",
+  "vim.statusBarColors.commandlineinprogress": "#007acc",
+  "vim.statusBarColors.searchinprogress": "#007acc",
+  "vim.statusBarColors.surroundinputmode": "#007acc",
+  "vim.useSystemClipboard": true,
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": false,
+  "playwright.showTrace": false,
+  "playwright.reuseBrowser": false
 }
+```

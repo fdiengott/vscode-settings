@@ -25,6 +25,9 @@ plugins=(
 
 HISTFILE="$HOME/.zsh_history"
 
+export HISTSIZE=10000
+export HISTFILESIZE=40000
+
 source $ZSH/oh-my-zsh.sh
 
 if [ -f ~/.bash_aliases ]; then

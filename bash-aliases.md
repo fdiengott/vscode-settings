@@ -1,4 +1,5 @@
 # bash aliases
+
 Create the file `.zsh_aliases` in your home directory.
 
 ```bash
@@ -12,6 +13,10 @@ alias home='code ~'
 alias reload='source ~/.zshrc'
 alias op='code .'
 alias cof='co $(gb | fzf)'
+alias '..'='cd ..'
+alias '.2'='cd ../..'
+alias '.3'='cd ../../..'
+alias '.4'='cd ../../../..'
 
 # git
 alias gst='git status'

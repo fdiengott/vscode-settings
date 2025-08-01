@@ -497,11 +497,11 @@ Make sure to download the "Cypher" extension for the color theming to look corre
     },
     {
       "before": ["]", "c"],
-      "commands": ["editor.action.editor.nextChange"]
+      "commands": ["workbench.action.editor.nextChange"]
     },
     {
       "before": ["[", "c"],
-      "commands": ["editor.action.editor.previousChange"]
+      "commands": ["workbench.action.editor.previousChange"]
     },
     {
       "before": ["]", "t"],

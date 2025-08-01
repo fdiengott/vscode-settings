@@ -517,7 +517,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
     },
     {
       "before": ["[", "e"],
-      "commands": ["editor.action.marker.previous"]
+      "commands": ["editor.action.marker.prev"]
     },
     {
       "before": ["]", "x"],

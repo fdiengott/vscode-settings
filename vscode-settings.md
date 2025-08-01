@@ -26,19 +26,25 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "workbench.list.horizontalScrolling": true,
 
   // desktop custom colorizing
-  "workbench.colorTheme": "Cypher",
-  "workbench.iconTheme": "material-icon-theme",
+  // "workbench.colorTheme": "Cypher",
+  // "workbench.iconTheme": "material-icon-theme",
+
+  "workbench.colorTheme": "Default High Contrast",
   "workbench.colorCustomizations": {
+    "editorIndentGuide.background1": "bebcbc",
+    "editorUnnecessaryCode.opacity": "#000000ca",
+    "editorUnnecessaryCode.border": "#ffffff6c",
+    "editor.lineHighlightBorder": "#f38518",
     "list.inactiveSelectionBackground": "#6dffb137",
     "editor.background": "#000000",
-    "editorCursor.foreground": "#c4c6c2",
+    // "editorCursor.foreground": "#c4c6c2",
     "editor.findMatchBackground": "#bb727242",
     "editor.findMatchBorder": "#fff5",
     "editor.findMatchHighlightBackground": "#924e4e60",
     "editor.findMatchHighlightBorder": "#ffffff22",
     "editor.lineHighlightBackground": "#343030",
-    "editor.selectionBackground": "#fcfdb030",
-    "editor.selectionHighlightBorder": "#fff2002f",
+    // "editor.selectionBackground": "#fcfdb030",
+    // "editor.selectionHighlightBorder": "#fff2002f",
     "list.highlightForeground": "#f9b4ed",
     "list.inactiveSelectionBackground": "#6dffb137",
     "editor.hoverHighlightBackground": "#fff3",
@@ -170,7 +176,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
       {
         "scope": ["variable", "markup.inline.raw", "support.class"],
         "settings": {
-          "foreground": "#c7768e"
+          "foreground": "#ff9ab8"
         }
       },
       {
@@ -179,7 +185,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
           "entity.name.function"
         ],
         "settings": {
-          "foreground": "#65aad1"
+          "foreground": "#78b6db"
         }
       },
       {
@@ -189,8 +195,13 @@ Make sure to download the "Cypher" extension for the color theming to look corre
         }
       },
       {
+        "scope": ["keyword.control"],
+        "settings": {
+          "foreground": "#e4aabc"
+        }
+      },
+      {
         "scope": [
-          "keyword.control",
           "storage.type",
           "meta.block variable.other.property",
           "variable.other.property",
@@ -209,6 +220,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
       },
       {
         "scope": [
+          "variable.other.readwrite",
           "entity.name.tag",
           "meta.tag.sgml",
           "markup.deleted.git_gutter",
@@ -374,6 +386,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
   "editor.colorDecorators": true,
   "workbench.editor.showTabs": "single",
   "workbench.statusBar.visible": "single",
+  "workbench.sideBar.location": "right",
   "prettier.arrowParens": "avoid",
   "prettier.printWidth": 120,
   "prettier.tabWidth": 4,
@@ -393,7 +406,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
     },
     {
       "before": ["N"],
-      "after": ["N", "Z", "Z"]
+      "after": ["N", "z", "z"]
     },
     {
       "before": ["c-d"],
@@ -455,7 +468,7 @@ Make sure to download the "Cypher" extension for the color theming to look corre
       "commands": ["workbench.action.referenceSearch.trigger"]
     },
     {
-      "before": ["g", "i"],
+      "before": ["g", "r"],
       "commands": ["editor.action.goToReferences"]
     },
     {
@@ -595,9 +608,10 @@ Make sure to download the "Cypher" extension for the color theming to look corre
       "after": ["\"", "_", "d", "P"]
     }
   ],
-  "vim.highlightedyank.enabled": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
   "vim.incsearch": true,
-  "vcim.handleKeys": {
+  "vim.handleKeys": {
     "<C-d>": true,
     "<C-j>": false,
     "<C-s>": false,
